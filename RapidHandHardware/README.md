@@ -206,7 +206,7 @@ Common issues and suggested checks:
 
 ## License
 
-This project is licensed under the [Creative Commons BY-NC-SA 4.0 License](http://creativecommons.org/licenses/by-nc-sa/4.0/). **Commercial use is strictly prohibited.**
+This project is licensed under the [Creative Commons BY-NC-SA 4.0 License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 ---
 
