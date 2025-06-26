@@ -1,0 +1,37 @@
+retargeting:
+  type: vectorada
+  urdf_path: allegro_hand/allegro_hand_right_limit.urdf
+
+  target_origin_link_names: ["wrist", "wrist", "wrist", "wrist","link_15.0_tip","link_15.0_tip","link_15.0_tip"]
+  target_task_link_names: ["link_15.0_tip",  "link_3.0_tip", "link_7.0_tip", "link_11.0_tip",  "link_3.0_tip", "link_7.0_tip", "link_11.0_tip"]
+
+  scaling_factor: 1
+
+  target_link_human_indices: [ [ 0, 0, 0, 0, 4, 4, 4], [4, 8, 12, 16, 8, 12, 16] ]
+
+  low_pass_alpha: 0.1
+
+num_constrain: 3
+
+transform:
+  type: PhalangeStretch
+  user: zhaoliang
+  standard2robot: [[1,0,0],[0,1,0],[0,0,1]]
+  finger_num: 4 
+  robot_human_link_mapping:
+    wrist: 0
+    link_0.0: 5
+    link_2.0: 6
+    link_3.0: 7
+    link_3.0_tip: 8
+    link_4.0: 9
+    link_6.0: 10
+    link_7.0: 11
+    link_7.0_tip: 12
+    link_8.0: 13
+    link_10.0: 14
+    link_11.0: 15
+    link_11.0_tip: 16
+    link_14.0: 2
+    link_15.0: 3
+    link_15.0_tip: 4

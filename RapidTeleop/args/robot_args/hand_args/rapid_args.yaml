@@ -1,0 +1,34 @@
+motor_port: /dev/ttyUSB0
+pcb_port: /dev/ttyCH341USB0
+use_camera: True
+
+tactile_order_dict:
+  IDIP: 0
+  MDIP: 3
+  RDIP: 1
+  LDIP: 2
+  TDIP: 4
+
+joint_command_order_list: 
+  [
+    "IS",
+    "IF",
+    "IP",
+    "ID",
+    "MS",
+    "MF",
+    "MP",
+    "MD",
+    "RS",
+    "RF",
+    "RP",
+    "RD",
+    "LS",
+    "LF",
+    "LP",
+    "LD",
+    "TS",
+    "TF",
+    "TP",
+    "TD",
+  ]

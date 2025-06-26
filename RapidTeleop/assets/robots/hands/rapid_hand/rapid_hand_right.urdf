@@ -1,0 +1,1268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="rapidhand2">
+  <link
+    name="BASE">
+    <inertial>
+      <origin
+        xyz="-0.00487361644963443 0.00202576490845328 0.0533472117698908"
+        rpy="0 0 0" />
+      <mass
+        value="0.440289695299581" />
+      <inertia
+        ixx="0.000347981417193963"
+        ixy="5.31146472663289E-06"
+        ixz="-4.08105216846695E-05"
+        iyy="0.00061617049726866"
+        iyz="-2.39642944264747E-05"
+        izz="0.000465938077374864" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="meshes/BASE.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="meshes/BASE.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="TMCPF">
+    <inertial>
+      <origin
+        xyz="5.43874579400638E-09 0.000173367279422285 0.0134848473102515"
+        rpy="0 0 0" />
+      <mass
+        value="0.00867255670420181" />
+      <inertia
+        ixx="7.67041806414348E-07"
+        ixy="-1.82709963476403E-13"
+        ixz="5.14245370735381E-14"
+        iyy="1.24661758171433E-06"
+        iyz="8.61105358367295E-10"
+        izz="8.26590920303468E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="meshes/TMCPF.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="meshes/TMCPF.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="TF"
+    type="revolute">
+    <origin
+      xyz="0.036 -0.004 0.043"
+      rpy="0 1.5708 0" />
+    <parent
+      link="BASE" />
+    <child
+      link="TMCPF" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.349"
+      upper="1.85"
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="TMCPS">
+    <inertial>
+      <origin
+        xyz="0.00113278662589469 -1.13908234303239E-08 -0.00229033918513943"
+        rpy="0 0 0" />
+      <mass
+        value="0.00961656020732061" />
+      <inertia
+        ixx="7.2565135717272E-07"
+        ixy="-2.31609281014523E-13"
+        ixz="-2.38773099457585E-08"
+        iyy="5.55204118086207E-07"
+        iyz="8.34739429589534E-14"
+        izz="4.99903953739093E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="meshes/TMCPS.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="meshes/TMCPS.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="TS"
+    type="revolute">
+    <origin
+      xyz="0 0 0.0309"
+      rpy="0 0 0" />
+    <parent
+      link="TMCPF" />
+    <child
+      link="TMCPS" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="2.1"
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="TPIP">
+    <inertial>
+      <origin
+        xyz="0.00115636106302726 0.0001035074072121 0.0147895764840127"
+        rpy="0 0 0" />
+      <mass
+        value="0.0218638036213291" />
+      <inertia
+        ixx="2.50540307346291E-06"
+        ixy="1.98429515838161E-09"
+        ixz="-7.73824368459479E-08"
+        iyy="2.17139629099095E-06"
+        iyz="9.2599657965607E-09"
+        izz="1.01723034142232E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="meshes/TPIP.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="meshes/TPIP.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="TP"
+    type="revolute">
+    <origin
+      xyz="0 0 0.0185"
+      rpy="0 0 0" />
+    <parent
+      link="TMCPS" />
+    <child
+      link="TPIP" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="1.90"
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="TDIP">
+    <inertial>
+      <origin
+        xyz="0.000385304884610346 -0.000805905719972057 0.0184635035729084"
+        rpy="0 0 0" />
+      <mass
+        value="0.025657649089922" />
+      <inertia
+        ixx="2.73446903195404E-06"
+        ixy="1.7863106894769E-09"
+        ixz="-8.64810580004142E-09"
+        iyy="2.44743923159286E-06"
+        iyz="8.3296520156693E-08"
+        izz="1.00880126944463E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="meshes/TDIP.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="meshes/TDIP.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="TD"
+    type="revolute">
+    <origin
+      xyz="0 0 0.0465"
+      rpy="0 0 0" />
+    <parent
+      link="TPIP" />
+    <child
+      link="TDIP" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="1.88"
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="IMCPF">
+    <inertial>
+      <origin
+        xyz="-1.23449232967976E-07 -1.55233664823548E-07 1.03178869920173E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.00105509319213642" />
+      <inertia
+        ixx="3.18851603791441E-08"
+        ixy="-3.32607689523367E-15"
+        ixz="-5.1173639263051E-14"
+        iyy="6.81180906084367E-08"
+        iyz="1.03660834170811E-13"
+        izz="9.44143585547911E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="meshes/IMCPF.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="meshes/IMCPF.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="IF"
+    type="revolute">
+    <origin
+      xyz="0.054 -0.004 0.13"
+      rpy="0 0 0" />
+    <parent
+      link="BASE" />
+    <child
+      link="IMCPF" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="1.85"
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="IMCPS">
+    <inertial>
+      <origin
+        xyz="0.00051151655399137 0.00128219675748885 0.0360582073884051"
+        rpy="0 0 0" />
+      <mass
+        value="0.0255680145005863" />
+      <inertia
+        ixx="2.87973996438069E-06"
+        ixy="4.2972188524556E-09"
+        ixz="-5.58008522219328E-09"
+        iyy="3.06430577453356E-06"
+        iyz="1.74224474142161E-08"
+        izz="1.39436516106889E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="meshes/IMCPS.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="meshes/IMCPS.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="IS"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="IMCPF" />
+    <child
+      link="IMCPS" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-0.2"
+      upper="0.2"
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="IPIP">
+    <inertial>
+      <origin
+        xyz="0.00115558034102659 0.000110062274357295 0.0317104165010226"
+        rpy="0 0 0" />
+      <mass
+        value="0.0218638098074725" />
+      <inertia
+        ixx="2.50540377307788E-06"
+        ixy="1.8163924082073E-09"
+        ixz="7.73826438143791E-08"
+        iyy="2.17139668013854E-06"
+        iyz="-6.50298139378206E-09"
+        izz="1.0172309313264E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="meshes/IPIP.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="meshes/IPIP.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="IP"
+    type="revolute">
+    <origin
+      xyz="0 0 0.052"
+      rpy="0 0 0" />
+    <parent
+      link="IMCPS" />
+    <child
+      link="IPIP" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="1.885"
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="IDIP">
+    <inertial>
+      <origin
+        xyz="0.000735870667299736 -0.00251219154785661 0.021014755592917"
+        rpy="0 0 0" />
+      <mass
+        value="0.0103515223793345" />
+      <inertia
+        ixx="1.17694075878933E-06"
+        ixy="1.0899242697752E-10"
+        ixz="7.47171593967575E-08"
+        iyy="1.16405050403568E-06"
+        iyz="1.10650844003481E-07"
+        izz="4.02880137181451E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="meshes/IDIP.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="meshes/IDIP.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ID"
+    type="revolute">
+    <origin
+      xyz="0 0 0.0465"
+      rpy="0 0 0" />
+    <parent
+      link="IPIP" />
+    <child
+      link="IDIP" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0.7"
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="MMCPF">
+    <inertial>
+      <origin
+        xyz="-1.23449232967976E-07 -1.55233664825283E-07 1.03178869920173E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.00105509319213642" />
+      <inertia
+        ixx="3.1885160379144E-08"
+        ixy="-3.32607682058185E-15"
+        ixz="-5.117363926248E-14"
+        iyy="6.81180906084367E-08"
+        iyz="1.03660834092638E-13"
+        izz="9.4414358554791E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="meshes/MMCPF.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="meshes/MMCPF.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="MF"
+    type="revolute">
+    <origin
+      xyz="0.018 -0.004 0.13"
+      rpy="0 0 0" />
+    <parent
+      link="BASE" />
+    <child
+      link="MMCPF" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="1.85"
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="MMCPS">
+    <inertial>
+      <origin
+        xyz="0.000511516467769143 0.00128219694955495 0.0360582071081458"
+        rpy="0 0 0" />
+      <mass
+        value="0.0255680149320248" />
+      <inertia
+        ixx="2.87973997290972E-06"
+        ixy="4.29722665087371E-09"
+        ixz="-5.58008711227301E-09"
+        iyy="3.06430582000263E-06"
+        iyz="1.74224487559017E-08"
+        izz="1.39436521176989E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="meshes/MMCPS.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="meshes/MMCPS.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="MS"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="MMCPF" />
+    <child
+      link="MMCPS" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-0.2"
+      upper="0.2"
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="MPIP">
+    <inertial>
+      <origin
+        xyz="0.00115558034097 0.000110062274357156 0.0317104165010227"
+        rpy="0 0 0" />
+      <mass
+        value="0.0218638098074725" />
+      <inertia
+        ixx="2.50540377307788E-06"
+        ixy="1.81639240820665E-09"
+        ixz="7.73826438143785E-08"
+        iyy="2.17139668013854E-06"
+        iyz="-6.50298139378068E-09"
+        izz="1.0172309313264E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="meshes/MPIP.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="meshes/MPIP.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="MP"
+    type="revolute">
+    <origin
+      xyz="0 0 0.052"
+      rpy="0 0 0" />
+    <parent
+      link="MMCPS" />
+    <child
+      link="MPIP" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="1.885"
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="MDIP">
+    <inertial>
+      <origin
+        xyz="0.00073587003347144 -0.0025121912941592 0.0210147562316098"
+        rpy="0 0 0" />
+      <mass
+        value="0.0103515217937735" />
+      <inertia
+        ixx="1.17694068464772E-06"
+        ixy="1.08980965760536E-10"
+        ixz="7.47171398387616E-08"
+        iyy="1.16405044111022E-06"
+        iyz="1.10650875264908E-07"
+        izz="4.02880111598232E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="meshes/MDIP.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="meshes/MDIP.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="MD"
+    type="revolute">
+    <origin
+      xyz="0 0 0.0465"
+      rpy="0 0 0" />
+    <parent
+      link="MPIP" />
+    <child
+      link="MDIP" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0.7"
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="RMCPF">
+    <inertial>
+      <origin
+        xyz="-1.23449232974915E-07 -1.55233664811405E-07 1.03178869892417E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.00105509319213642" />
+      <inertia
+        ixx="3.18851603791441E-08"
+        ixy="-3.32607682729697E-15"
+        ixz="-5.11736393384821E-14"
+        iyy="6.81180906084367E-08"
+        iyz="1.03660834101083E-13"
+        izz="9.44143585547911E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="meshes/RMCPF.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="meshes/RMCPF.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RF"
+    type="revolute">
+    <origin
+      xyz="-0.018 -0.004 0.13"
+      rpy="0 0 0" />
+    <parent
+      link="BASE" />
+    <child
+      link="RMCPF" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="1.85"
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="RMCPS">
+    <inertial>
+      <origin
+        xyz="0.000511516543022492 0.00128219675749102 0.0360582073884084"
+        rpy="0 0 0" />
+      <mass
+        value="0.0255680145005759" />
+      <inertia
+        ixx="2.87973996437977E-06"
+        ixy="4.29721904134885E-09"
+        ixz="-5.58008481288554E-09"
+        iyy="3.06434728045293E-06"
+        iyz="1.74224474141735E-08"
+        izz="1.39440666698883E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="meshes/RMCPS.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="meshes/RMCPS.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RS"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="RMCPF" />
+    <child
+      link="RMCPS" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-0.2"
+      upper="0.2"
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="RPIP">
+    <inertial>
+      <origin
+        xyz="0.00115558034102733 0.000110062274356899 0.0317104165010224"
+        rpy="0 0 0" />
+      <mass
+        value="0.0218638098074725" />
+      <inertia
+        ixx="2.50540377307788E-06"
+        ixy="1.81639240820689E-09"
+        ixz="7.73826438143805E-08"
+        iyy="2.17139668013854E-06"
+        iyz="-6.50298139378078E-09"
+        izz="1.0172309313264E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="meshes/RPIP.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="meshes/RPIP.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RP"
+    type="revolute">
+    <origin
+      xyz="0 0 0.052"
+      rpy="0 0 0" />
+    <parent
+      link="RMCPS" />
+    <child
+      link="RPIP" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="1.885"
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="RDIP">
+    <inertial>
+      <origin
+        xyz="0.000735869975292142 -0.00251219127106798 0.0210147562227153"
+        rpy="0 0 0" />
+      <mass
+        value="0.0103515217591085" />
+      <inertia
+        ixx="1.17694068870696E-06"
+        ixy="1.08978738923934E-10"
+        ixz="7.47171385069524E-08"
+        iyy="1.16405044521866E-06"
+        iyz="1.10650875070147E-07"
+        izz="4.02880107508782E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="meshes/RDIP.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="meshes/RDIP.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RD"
+    type="revolute">
+    <origin
+      xyz="0 0 0.0465"
+      rpy="0 0 0" />
+    <parent
+      link="RPIP" />
+    <child
+      link="RDIP" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0.7"
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="LMCPF">
+    <inertial>
+      <origin
+        xyz="-1.23449232974915E-07 -1.55233664811405E-07 1.03178869906295E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.00105509319213642" />
+      <inertia
+        ixx="3.1885160379144E-08"
+        ixy="-3.32607682703266E-15"
+        ixz="-5.11736393554975E-14"
+        iyy="6.81180906084366E-08"
+        iyz="1.03660834073681E-13"
+        izz="9.44143585547909E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="meshes/LMCPF.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="meshes/LMCPF.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LF"
+    type="revolute">
+    <origin
+      xyz="-0.058 -0.004 0.11"
+      rpy="0 0 0" />
+    <parent
+      link="BASE" />
+    <child
+      link="LMCPF" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="1.85"
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="LMCPS">
+    <inertial>
+      <origin
+        xyz="0.000511516546674126 0.00128219675748947 0.0360582073884079"
+        rpy="0 0 0" />
+      <mass
+        value="0.0255680145005756" />
+      <inertia
+        ixx="2.87973996437963E-06"
+        ixy="4.29721881328803E-09"
+        ixz="-5.58008513599923E-09"
+        iyy="3.06430374528504E-06"
+        iyz="1.74224474141677E-08"
+        izz="1.39436313182104E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="meshes/LMCPS.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="meshes/LMCPS.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LS"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="LMCPF" />
+    <child
+      link="LMCPS" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-0.2"
+      upper="0.2"
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="LPIP">
+    <inertial>
+      <origin
+        xyz="0.00115558034102762 0.00011006227435764 0.031710416501022"
+        rpy="0 0 0" />
+      <mass
+        value="0.0218638098074725" />
+      <inertia
+        ixx="2.50540377307788E-06"
+        ixy="1.81639240820656E-09"
+        ixz="7.73826438143809E-08"
+        iyy="2.17139668013854E-06"
+        iyz="-6.5029813937801E-09"
+        izz="1.0172309313264E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="meshes/LPIP.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="meshes/LPIP.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LP"
+    type="revolute">
+    <origin
+      xyz="0 0 0.052"
+      rpy="0 0 0" />
+    <parent
+      link="LMCPS" />
+    <child
+      link="LPIP" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="1.885"
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="LDIP">
+    <inertial>
+      <origin
+        xyz="0.000735870207156916 -0.00251219124851578 0.0210147557253665"
+        rpy="0 0 0" />
+      <mass
+        value="0.0103515214610938" />
+      <inertia
+        ixx="1.17694060249007E-06"
+        ixy="1.08978271148726E-10"
+        ixz="7.47171579290268E-08"
+        iyy="1.16405035779421E-06"
+        iyz="1.10650860312831E-07"
+        izz="4.02880106236455E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="meshes/LDIP.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="meshes/LDIP.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LD"
+    type="revolute">
+    <origin
+      xyz="0 0 0.0465"
+      rpy="0 0 0" />
+    <parent
+      link="LPIP" />
+    <child
+      link="LDIP" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0.7"
+      effort="1"
+      velocity="1" />
+  </joint>
+
+  <!-- 定位点 -->
+  <link name="thtip">
+    <inertial>
+      <mass value="0.001"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+  </link>
+  <joint name="THtip" type="fixed">
+    <parent link="TDIP"/>
+    <child link="thtip"/>
+    <origin rpy="0 0 0" xyz="0 0 0.04"/>
+  </joint>
+
+  <link name="intip">
+    <inertial>
+      <mass value="0.001"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+  </link>
+  <joint name="INtip" type="fixed">
+    <parent link="IDIP"/>
+    <child link="intip"/>
+    <origin rpy="0 0 0" xyz="0 0 0.03"/>
+  </joint>
+
+  <link name="mitip">
+    <inertial>
+      <mass value="0.001"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+  </link>
+  <joint name="MItip" type="fixed">
+    <parent link="MDIP"/>
+    <child link="mitip"/>
+    <origin rpy="0 0 0" xyz="0 0 0.03"/>
+  </joint>
+  
+  <link name="ritip">
+    <inertial>
+      <mass value="0.001"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+  </link>
+  <joint name="RItip" type="fixed">
+    <parent link="RDIP"/>
+    <child link="ritip"/>
+    <origin rpy="0 0 0" xyz="0 0 0.03"/>
+  </joint>
+
+  <link name="pitip">
+    <inertial>
+      <mass value="0.001"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+  </link>
+  <joint name="PItip" type="fixed">
+    <parent link="LDIP"/>
+    <child link="pitip"/>
+    <origin rpy="0 0 0" xyz="0 0 0.03"/>
+  </joint>
+</robot>

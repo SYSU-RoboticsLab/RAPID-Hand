@@ -1,0 +1,43 @@
+retargeting:
+  type: vectorada
+  urdf_path: leap_hand/leap_hand_right.urdf
+
+  target_origin_link_names: ["base", "base", "base", "base","thumb_tip_head","thumb_tip_head","thumb_tip_head"]
+  target_task_link_names: ["thumb_tip_head",  "index_tip_head", "middle_tip_head", "ring_tip_head",  "index_tip_head", "middle_tip_head", "ring_tip_head"]
+
+  scaling_factor: 1
+
+  target_link_human_indices: [ [ 0, 0, 0, 0, 4, 4, 4], [4, 8, 12, 16, 8, 12, 16] ]
+
+  low_pass_alpha: 0.1
+
+num_constrain: 3
+
+transform:
+  type: PhalangeStretch
+  user: User1
+  standard2robot: [[1,0,0],[0,1,0],[0,0,1]]
+  finger_num: 4
+  robot_human_link_mapping:
+    base: 0
+    # palm_lower
+    mcp_joint: 5
+    # pip
+    dip: 6
+    fingertip: 7
+    mcp_joint_2: 9
+    # pip_2
+    dip_2: 10
+    fingertip_2: 11
+    mcp_joint_3: 13
+    # pip_3
+    dip_3: 14
+    fingertip_3: 15
+    # thumb_temp_base
+    # thumb_pip
+    thumb_dip: 2
+    thumb_fingertip: 3
+    thumb_tip_head: 4
+    index_tip_head: 8
+    middle_tip_head: 12
+    ring_tip_head: 16

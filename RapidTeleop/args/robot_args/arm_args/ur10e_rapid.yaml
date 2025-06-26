@@ -1,0 +1,28 @@
+robot_cfg:
+  dt: 0.05
+  urdf_path: arms/ur10e/ur10e_limit.urdf
+
+  kinematics:
+    ik_damping: 1e-5
+    eps: 1e-3
+    ee_link: ee_link
+
+init_qpos:
+  shoulder_pan_joint :     -0.066
+  shoulder_lift_joint :    -1.86
+  elbow_joint :    1.97
+  wrist_1_joint :  0.13
+  wrist_2_joint :  1.56
+  wrist_3_joint :  -3.00
+rotation_matrix: [[1,0,0],[0,1,0],[0,0,1]]
+transform_matrix: [[1,0,0],[0,1,0],[0,0,1]]
+
+ur10_command_order:
+  [
+    "shoulder_pan_joint",
+    "shoulder_lift_joint",
+    "elbow_joint",
+    "wrist_1_joint",
+    "wrist_2_joint",
+    "wrist_3_joint",
+  ]

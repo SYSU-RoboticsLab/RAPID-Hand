@@ -1,0 +1,20 @@
+robot_arm: UR10e
+robot_hand: Rapid
+
+input_type: visionpro
+user: User1
+joint_command_topic: /teleoperation/joint_angles
+
+publish_config:
+  publish_robot_data: true
+  robot_data_topic:
+    joint_topic: /robot2/joint_states
+    rgb_image_topic: /camera_image
+    tactile_topic: /tactile_data
+    tactile_image_topic: /tactile_image
+    tactile_point_cloud_topic: /tactile_point_cloud
+
+save_config:
+  save_robot_data: False
+  root_dir: ./data
+  task_dir: test_data

@@ -1,0 +1,47 @@
+retargeting:
+  type: vectorada
+  urdf_path: rapid_hand/rapid_hand_right.urdf
+
+  target_origin_link_names: ["BASE", "BASE", "BASE", "BASE", "BASE","thtip","thtip","thtip","thtip",]
+  target_task_link_names: ["thtip",  "intip", "mitip", "ritip", "pitip",  "intip", "mitip", "ritip", "pitip"]
+
+  scaling_factor: 1
+
+  target_link_human_indices: [ [ 0, 0, 0, 0, 0, 4, 4, 4, 4], [4, 8, 12, 16, 20, 8, 12, 16, 20] ]
+
+  low_pass_alpha: 0.2
+
+num_constrain: 4
+
+transform:
+  type: PhalangeStretch
+  user: User1
+  standard2robot: [[0,1,0],[-1,0,0],[0,0,1]]
+  finger_num: 5
+  robot_human_link_mapping:
+    BASE: 0
+    # TMCPF
+    # TMCPS:2
+    TPIP: 2
+    TDIP: 3
+    # IMCPF
+    IMCPS: 5
+    IPIP: 6
+    IDIP: 7
+    # MMCPF
+    MMCPS: 9
+    MPIP: 10
+    MDIP: 11
+    # RMCPF
+    RMCPS: 13
+    RPIP: 14
+    RDIP: 15
+    # LMCPF
+    LMCPS: 17
+    LPIP: 18
+    LDIP: 19
+    thtip: 4
+    intip: 8
+    mitip: 12
+    ritip: 16
+    pitip: 20

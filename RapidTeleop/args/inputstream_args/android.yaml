@@ -1,0 +1,5 @@
+input_stream_type: image
+input_type: a
+
+settings:
+  android_ip: 192.168.1.100

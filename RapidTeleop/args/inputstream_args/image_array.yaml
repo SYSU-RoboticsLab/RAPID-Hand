@@ -1,0 +1,5 @@
+input_stream_type: image
+input_type: i
+
+settings:
+  image_folder: data/user_data/image

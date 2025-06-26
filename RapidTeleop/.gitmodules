@@ -1,0 +1,3 @@
+[submodule "control/rapid_hand_control/camera_port/pyorbbecsdk"]
+	path = control/rapid_hand_control/camera_port/pyorbbecsdk
+	url = https://github.com/orbbec/pyorbbecsdk.git

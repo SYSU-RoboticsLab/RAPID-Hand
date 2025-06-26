@@ -1,0 +1,8 @@
+av==14.4.0
+dynamixel_sdk==3.7.31
+numpy==1.15.1
+pandas==0.23.4
+pygame==2.6.1
+pynput==1.8.1
+pyserial==3.5
+setuptools==40.2.0
