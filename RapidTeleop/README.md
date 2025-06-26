@@ -28,10 +28,10 @@
     <a href="https://cse.sysu.edu.cn/teacher/ChengHui"><strong>Hui Cheng</strong></a>
 </p>
 
-<h3 align="center"><a href="https://www.arxiv.org/abs/2506.07490">Paper</a> | <a href="https://rapid-hand.github.io/">Project Page</a> | <a href="">Hardware Design</a> </a></h3>
+<h3 align="center"><a href="https://www.arxiv.org/abs/2506.07490">Paper</a> | <a href="https://rapid-hand.github.io/">Project Page</a> | <a href="https://github.com/SYSU-RoboticsLab/RAPID-Hand/tree/main/RapidHandHardware">Hardware Design</a> </a></h3>
 
 <p align="center">
-    <img src="images/leader_follower_1_00.png"  width="90%">
+    <img src="images/leader_follower_1_00.png"  width="60%">
 </p>
 
 ## 1. Introduction

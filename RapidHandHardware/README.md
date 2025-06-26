@@ -28,7 +28,7 @@
     <a href="https://cse.sysu.edu.cn/teacher/ChengHui"><strong>Hui Cheng</strong></a>
 </p>
 
-<h3 align="center"><a href="https://www.arxiv.org/abs/2506.07490">Paper</a> | <a href="https://rapid-hand.github.io/">Project Page</a> | <a href="">Teleoperation</a> </a></h3>
+<h3 align="center"><a href="https://www.arxiv.org/abs/2506.07490">Paper</a> | <a href="https://rapid-hand.github.io/">Project Page</a> | <a href="https://github.com/SYSU-RoboticsLab/RAPID-Hand/tree/main/RapidTeleop">Teleoperation</a> </a></h3>
 
 <p align="center">
     <img src="rapidhand_hardware.png"  width="90%">

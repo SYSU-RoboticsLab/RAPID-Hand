@@ -28,30 +28,13 @@
     <a href="https://cse.sysu.edu.cn/teacher/ChengHui"><strong>Hui Cheng</strong></a>
 </p>
 
-<div class="box alt" style="margin-bottom: 1em;">
-  <div class="row 0% uniform" style="width: 100%; display: flex; justify-content: center; gap: 2em;">
-    <!-- SYSU Logo -->
-    <div style="text-align: center; width: 21%;">
-      <span class="image fit" style="margin-bottom: 0.5em; margin-top: 0.3em;">
-        <img src="RapidTeleop/images/institution/sysu_logo.png" alt="SYSU Logo">
-      </span>
-    </div>
-    <!-- UC Merced Logo -->
-    <div style="text-align: center; width: 21%;">
-      <span class="image fit" style="margin-bottom: 0.5em; margin-top: 0.3em;">
-        <img src="RapidTeleop/images/institution/University_of_Califronia_Merced_logo.png" alt="UC Merced Logo">
-      </span>
-    </div>
-    <!-- CASIA Logo -->
-    <div style="text-align: center; width: 21%;">
-      <span class="image fit" style="margin-bottom: 0.5em; margin-top: 0.3em;">
-        <img src="RapidTeleop/images/institution/casia-logo.jpg" alt="CASIA Logo">
-      </span>
-    </div>
-  </div>
-</div>
+<p align="center">
+    <img src="RapidTeleop/images/institution/sysu_logo.png" height=40"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    <img src="RapidTeleop/images/institution/University_of_Califronia_Merced_logo.png" height="40"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    <img src="RapidTeleop/images/institution/casia-logo.jpg" height="40">
+</p>
 
-<h3 align="center"><a href="https://www.arxiv.org/abs/2506.07490">Paper</a> | <a href="https://rapid-hand.github.io/">Project Page</a> | <a href="">Hardware Design</a> | <a href="">Teleoperation</a> </a></h3>
+<h3 align="center"><a href="https://www.arxiv.org/abs/2506.07490">Paper</a> | <a href="https://rapid-hand.github.io/">Project Page</a> | <a href="https://github.com/SYSU-RoboticsLab/RAPID-Hand/tree/main/RapidHandHardware">Hardware Design</a> | <a href="https://github.com/SYSU-RoboticsLab/RAPID-Hand/tree/main/RapidTeleop">Teleoperation</a> </a></h3>
 
 <p align="center">
     <img src="teaser_rss_7_00.png"  width="90%">
@@ -115,4 +98,3 @@ This project is licensed under the [Creative Commons BY-NC-SA 4.0 License](http:
 
 ## 🙏 Acknowledgements
 
----
