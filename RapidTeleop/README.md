@@ -31,7 +31,7 @@
 <h3 align="center"><a href="https://www.arxiv.org/abs/2506.07490">Paper</a> | <a href="https://rapid-hand.github.io/">Project Page</a> | <a href="https://github.com/SYSU-RoboticsLab/RAPID-Hand/tree/main/RapidHandHardware">Hardware Design</a> </a></h3>
 
 <p align="center">
-    <img src="images/leader_follower_1_00.png"  width="60%">
+    <img src="assets/images/leader_follower_1_00.png"  width="60%">
 </p>
 
 ## 1. Introduction
@@ -244,7 +244,7 @@ This section guides you through running the ROS-based teleoperation system. The 
 
 On your Vision Pro device, open the **Tracking Streamer** app and tap **Start** to begin streaming motion data.
 
-![Vision Pro Main UI](images/visionpro_main.png)
+[![Vision Pro Main UI](assets/images/visionpro_main.png)](https://github.com/Improbable-AI/VisionProTeleop)
 
 ---
 

@@ -29,15 +29,15 @@
 </p>
 
 <p align="center">
-    <img src="RapidTeleop/images/institution/sysu_logo.png" height=40"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-    <img src="RapidTeleop/images/institution/University_of_Califronia_Merced_logo.png" height="40"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-    <img src="RapidTeleop/images/institution/casia-logo.jpg" height="40">
+    <img src="RapidTeleop/assets/images/institution/sysu_logo.png" height=40">                    
+    <img src="RapidTeleop/assets/images/institution/University_of_Califronia_Merced_logo.png" height="40">                    
+    <img src="RapidTeleop/assets/images/institution/casia-logo.jpg" height="40">
 </p>
 
 <h3 align="center"><a href="https://www.arxiv.org/abs/2506.07490">Paper</a> | <a href="https://rapid-hand.github.io/">Project Page</a> | <a href="https://github.com/SYSU-RoboticsLab/RAPID-Hand/tree/main/RapidHandHardware">Hardware Design</a> | <a href="https://github.com/SYSU-RoboticsLab/RAPID-Hand/tree/main/RapidTeleop">Teleoperation</a> </a></h3>
 
 <p align="center">
-    <img src="teaser_rss_7_00.png"  width="90%">
+    <img src="RapidTeleop/assets/images/teaser_rss_7_00.png"  width="90%">
 </p>
 
 ## 🔥 News

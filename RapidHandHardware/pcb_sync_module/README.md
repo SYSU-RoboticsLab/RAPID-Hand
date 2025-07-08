@@ -15,6 +15,7 @@ pcb_sync_module/
 │
 └─ pcb_sourcing/                            # Contains all PCB design and production files
     ├─ BOM_Board1_PCB1.xlsx                 # Bill of Materials for PCB components
+    ├─ PCB_Layout.pdf                       # PCB layout with Camera/USB-C interfaces
     └─ SCH_Schematic1.pdf                   # Full schematic of the board
 ```
 
