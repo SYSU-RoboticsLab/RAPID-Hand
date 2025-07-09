@@ -348,7 +348,3 @@ save_config:
 ## Licence
 
 This project is licensed under the [Creative Commons BY-NC-SA 4.0 License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
-
----
-
-## Acknowledgements

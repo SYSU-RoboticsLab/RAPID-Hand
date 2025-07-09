@@ -98,3 +98,12 @@ This project is licensed under the [Creative Commons BY-NC-SA 4.0 License](http:
 
 ## 🙏 Acknowledgements
 
+This project was developed with help of the following codebases.
+- [Tracking Streamer](https://github.com/Improbable-AI/VisionProTeleop)  
+- [AnyTeleop](https://yzqin.github.io/anyteleop/)  
+- [Bunny-VisionPro](https://dingry.github.io/projects/bunny_visionpro.html)  
+- [HATO](https://toruowo.github.io/hato/)  
+- [LEAP_Hand_API](https://github.com/leap-hand/LEAP_Hand_API)  
+- [Orbbec-sdk](https://github.com/orbbec/pyorbbecsdk)  
+
+We would also like to thank <img src="RapidTeleop/assets/images/institution/orbot.jpg" alt="orbot" width="20"/> **ORBOT** Ltd. for their support on the robot hardware, [LUSTER](https://www.luster3ds.com/content/details202_5099.html) for motion capture devices, and [MATRIX](https://www.moxiantech.com/) for haptic sensing devices. We sincerely appreciate the contributions from all related institutions and authors.  
