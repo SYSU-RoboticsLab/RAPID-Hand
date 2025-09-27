@@ -46,7 +46,7 @@
 
 ## 🔥 News
 
-- [2025-09] Our paper has been **accepted to NeurIPS 2025**! 🎉
+- [2025-09] Our paper has been **accepted by NeurIPS 2025**! 🎉
 - [2025-06] RAPID Hand full system released with mechanical, electrical, and software modules.
 - [2025-06] We release the [paper](https://www.arxiv.org/abs/2506.07490) of RAPID Hand.
 
