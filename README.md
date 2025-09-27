@@ -30,10 +30,10 @@
 
 
 <p align="center">
-    <img src="RapidTeleop/assets/images/institution/sysu_logo.png" height="40">
-    <img src="RapidTeleop/assets/images/institution/orbot_logo.png" height="40">
-    <img src="RapidTeleop/assets/images/institution/University_of_Califronia_Merced_logo.png" height="40">
-    <img src="RapidTeleop/assets/images/institution/casia-logo.jpg" height="40">
+    <img src="RapidTeleop/assets/images/institution/sysu_logo.png" height="50">
+    <img src="RapidTeleop/assets/images/institution/orbot_logo.png" height="50">
+    <img src="RapidTeleop/assets/images/institution/University_of_Califronia_Merced_logo.png" height="50">
+    <img src="RapidTeleop/assets/images/institution/casia-logo.jpg" height="50">
 </p>
 
 <h3 align="center"> NeurIPS 2025 </h3>
