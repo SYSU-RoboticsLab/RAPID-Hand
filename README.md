@@ -28,11 +28,18 @@
     <a href="https://cse.sysu.edu.cn/teacher/ChengHui"><strong>Hui Cheng</strong></a>
 </p>
 
-<p align="center">
-    <img src="RapidTeleop/assets/images/institution/sysu_logo.png" height=40">                    
-    <img src="RapidTeleop/assets/images/institution/University_of_Califronia_Merced_logo.png" height="40">                    
-    <img src="RapidTeleop/assets/images/institution/casia-logo.jpg" height="40">
-</p>
+<div align="center"
+     style="display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;">
+  <img src="RapidTeleop/assets/images/institution/sysu_logo.png"                  height="40">
+  <img src="RapidTeleop/assets/images/institution/orbot_logo.png"                 height="40">
+  <img src="RapidTeleop/assets/images/institution/University_of_Califronia_Merced_logo.png" height="40">
+  <img src="RapidTeleop/assets/images/institution/casia-logo.jpg"                 height="40">
+</div>
+
+<h3 align="center"> NeurIPS 2025 </h3>
 
 <h3 align="center"><a href="https://www.arxiv.org/abs/2506.07490">Paper</a> | <a href="https://rapid-hand.github.io/">Project Page</a> | <a href="https://github.com/SYSU-RoboticsLab/RAPID-Hand/tree/main/RapidHandHardware">Hardware Design</a> | <a href="https://github.com/SYSU-RoboticsLab/RAPID-Hand/tree/main/RapidTeleop">Teleoperation</a> </a></h3>
 
@@ -42,8 +49,9 @@
 
 ## 🔥 News
 
-- \[2025-06\] RAPID Hand full system released with mechanical, electrical, and software modules.
-- \[2025-06\] We release the [paper](https://www.arxiv.org/abs/2506.07490) of RAPID Hand.
+- [2025-09] Our paper has been **accepted to NeurIPS 2025**! 🎉
+- [2025-06] RAPID Hand full system released with mechanical, electrical, and software modules.
+- [2025-06] We release the [paper](https://www.arxiv.org/abs/2506.07490) of RAPID Hand.
 
 ---
 
