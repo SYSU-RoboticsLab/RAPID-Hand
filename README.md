@@ -28,16 +28,13 @@
     <a href="https://cse.sysu.edu.cn/teacher/ChengHui"><strong>Hui Cheng</strong></a>
 </p>
 
-<div align="center"
-     style="display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 40px;">
-  <img src="RapidTeleop/assets/images/institution/sysu_logo.png"                  height="40">
-  <img src="RapidTeleop/assets/images/institution/orbot_logo.png"                 height="40">
-  <img src="RapidTeleop/assets/images/institution/University_of_Califronia_Merced_logo.png" height="40">
-  <img src="RapidTeleop/assets/images/institution/casia-logo.jpg"                 height="40">
-</div>
+
+<p align="center">
+    <img src="RapidTeleop/assets/images/institution/sysu_logo.png" height="40">
+    <img src="RapidTeleop/assets/images/institution/orbot_logo.png" height="40">
+    <img src="RapidTeleop/assets/images/institution/University_of_Califronia_Merced_logo.png" height="40">
+    <img src="RapidTeleop/assets/images/institution/casia-logo.jpg" height="40">
+</p>
 
 <h3 align="center"> NeurIPS 2025 </h3>
 
